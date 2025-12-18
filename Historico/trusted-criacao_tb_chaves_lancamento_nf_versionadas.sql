@@ -27,6 +27,7 @@ select
         ds_titulo, '-',
         cast(sequencia as string)
     ) as chave_nota,
-    CURRENT_DATE('America/Sao_Paulo') as dh_versao,
+    current_datetime('America/Sao_Paulo') as dh_versao,
     'nova' as sn_nota_nova
 from `sandbox-financeiro-471714.ds_trusted_contabil.tb_contabil_hist`;
+
